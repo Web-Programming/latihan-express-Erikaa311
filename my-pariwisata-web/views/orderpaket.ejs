@@ -1,0 +1,23 @@
+<%- include('index') %>
+<h1 class="text-center">Daftar Paket Wisata</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nama Paket</th>
+      <th>Harga</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% paketList.forEach(function(paket) { %>
+      <tr>
+        <td><%= paket.id %></td>
+        <td><%= paket.nama %></td>
+        <td><%= paket.harga %></td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+<div class="text-center">
+  <a href="/orderpaket" class="btn btn-success">Pesan Sekarang</a>
+</div>
