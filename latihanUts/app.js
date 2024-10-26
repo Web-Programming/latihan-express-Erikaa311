@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-// daftarkan route mahasiswa
+// daftarkan route 
 app.use('/kategori', kategoriController);
 
 // catch 404 and forward to error handler
